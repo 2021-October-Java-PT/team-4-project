@@ -23,7 +23,7 @@ public class ContinentController {
 
         Optional<Continent> foundContinent = continentRepo.findById(id);
         model.addAttribute("singleContinent",foundContinent.get());
-        return "continent.html";
+        return "continentView";
     }
 
     @RequestMapping("/continents")
