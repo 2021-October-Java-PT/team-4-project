@@ -5,9 +5,11 @@ import org.springframework.stereotype.Component;
 import org.wecancodeit.com.project.models.Continent;
 import org.wecancodeit.com.project.models.Country;
 import org.wecancodeit.com.project.models.Island;
+import org.wecancodeit.com.project.models.Waterway;
 import org.wecancodeit.com.project.repositories.ContinentRepository;
 import org.wecancodeit.com.project.repositories.CountryRepository;
 import org.wecancodeit.com.project.repositories.IslandRepository;
+import org.wecancodeit.com.project.repositories.WaterwayRepository;
 
 import javax.annotation.Resource;
 
@@ -20,6 +22,8 @@ public class Populator implements CommandLineRunner {
     private CountryRepository countryRepo;
     @Resource
     private IslandRepository islandRepo;
+    @Resource
+    WaterwayRepository waterwayRepo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -107,30 +111,30 @@ public class Populator implements CommandLineRunner {
         islandRepo.save(aucklandIslands);
         islandRepo.save(australIslands);
 
-//        Waterway atlanticOcean = new Waterway("Atlantic Ocean","description","image");
-//        Waterway carribeanSea = new Waterway("Carribean Sea","description","image");
-//        Waterway beringSea = new Waterway("BeringSea","description","image");
-//        Waterway pacificOcean = new Waterway("PacificOcean","description","image");
-//        Waterway balearicSea = new Waterway("balearicSea","description","image");
-//        Waterway balticSea = new Waterway("Baltic Sea","description","image");
-//        Waterway northSea = new Waterway("North Sea","description","image");
-//        Waterway indianOcean = new Waterway("Indian Ocean","description","image");
-//        Waterway yawriBay = new Waterway("Yawri bay","description","image");
-//        Waterway gulfOfThailand = new Waterway("Gulf of Thailand","description","image");
-//        Waterway bacuitBay = new Waterway("Bacuit Bay","description","image");
-//        Waterway southernPacificOcean = new Waterway("Southern Pacific Ocean","description","image");
-//        waterwayRepo.save(atlanticOcean);
-//        waterwayRepo.save(carribeanSea);
-//        waterwayRepo.save(beringSea);
-//        waterwayRepo.save(pacificOcean);
-//        waterwayRepo.save(balearicSea);
-//        waterwayRepo.save(balticSea);
-//        waterwayRepo.save(northSea);
-//        waterwayRepo.save(indianOcian);
-//        waterwayRepo.save(yawriBay);
-//        waterwayRepo.save(gulfOfThailand);
-//        waterwayRepo.save(bacuitBay);
-//        waterwayRepo.save(southerPacificOcean);
+        Waterway atlanticOcean = new Waterway("Atlantic Ocean","description","image");
+        Waterway carribeanSea = new Waterway("Carribean Sea","description","image");
+        Waterway beringSea = new Waterway("BeringSea","description","image");
+        Waterway pacificOcean = new Waterway("PacificOcean","description","image");
+        Waterway balearicSea = new Waterway("balearicSea","description","image");
+        Waterway balticSea = new Waterway("Baltic Sea","description","image");
+        Waterway northSea = new Waterway("North Sea","description","image");
+        Waterway indianOcean = new Waterway("Indian Ocean","description","image");
+        Waterway yawriBay = new Waterway("Yawri bay","description","image");
+        Waterway gulfOfThailand = new Waterway("Gulf of Thailand","description","image");
+        Waterway bacuitBay = new Waterway("Bacuit Bay","description","image");
+        Waterway southernPacificOcean = new Waterway("Southern Pacific Ocean","description","image");
+        waterwayRepo.save(atlanticOcean);
+        waterwayRepo.save(carribeanSea);
+        waterwayRepo.save(beringSea);
+        waterwayRepo.save(pacificOcean);
+        waterwayRepo.save(balearicSea);
+        waterwayRepo.save(balticSea);
+        waterwayRepo.save(northSea);
+        waterwayRepo.save(indianOcean);
+        waterwayRepo.save(yawriBay);
+        waterwayRepo.save(gulfOfThailand);
+        waterwayRepo.save(bacuitBay);
+        waterwayRepo.save(southernPacificOcean);
 
 
     }
