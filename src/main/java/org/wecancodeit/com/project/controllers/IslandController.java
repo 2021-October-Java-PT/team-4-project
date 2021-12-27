@@ -18,17 +18,17 @@ public class IslandController {
         this.islandRepo = islandRepo;
     }
 
-    @RequestMapping("/island/{id}")
+    @RequestMapping("/islands/{id}")
     public String displaySingleIsland(@PathVariable Long id, Model model) {
 
         Optional<Island> foundIsland = islandRepo.findById(id);
-        model.addAttribute("singleIsland", foundIsland.get());
+        model.addAttribute("islandModel", foundIsland.get());
         return "islandView";
     }
 
     @RequestMapping("/islands")
     public String displayIslands(Model model) {
-        model.addAttribute("islands", islandRepo.findAll());
+        model.addAttribute("islandsModel", islandRepo.findAll());
         return "islandsView";
     }
 }

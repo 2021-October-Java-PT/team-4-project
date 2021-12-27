@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css"></link>
-    <meta charset="UTF-8">
-    <title>Island View</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
+    <title th:text = "${islandModel.islandName}"></title>
 </head>
 <body>
-    <div class="container">
-        <main>
-            <div class="island-header">
-                <div class="island-info">
-                    <h1 th:text ="${islandModel.islandName}"></h1>
-                    <h2 th:text="${islandModel.islandDesc}"></h2>
-
-                </div>
-
-                <img class="island-image" th:src="${islandModel.imgUrl}">
-            </div>
-
-
-            <h1>Island View</h1>
-        </main>
-    </div>
+<div class="container">
+    <main class="island">
+        <h1 th:text ="${islandModel.islandName}"></h1>
+        <img th:src="@{${islandModel.imgUrl}}" alt="Image of island">
+        <p><strong>Description: </strong><span class="islandDetail" th:text="${islandModel.islandDesc}">Island</span></p>
+    </main>
+    <nav>
+        <a class="btn" th:href="@{/islands}">Go back to islands</a>
+        <a class="btn" th:href="@{/}">Go Home</a>
+    </nav>
+</div>
+<footer>
+    <small>&copy JAC Enterprises Team 4 2022</small>
+</footer>
 </body>
-
 </html>
