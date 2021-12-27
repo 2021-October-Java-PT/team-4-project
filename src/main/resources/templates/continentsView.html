@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
     <title>Continents View</title>
 </head>
 <body>
-<h1>Continents View</h1>
+<div class="container">
+    <main class="continents">
+        <h1>Continents</h1>
+        <section class="continentsList" th:each="continent : ${continentsModel}">
+            <ul>
+                <li>
+                    <a class="btn" th:href="@{/continents/{id}(id=${continent.id})}" th:text="${continent.continentName}"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <nav>
+        <a class="btn" th:href="@{/}">Home</a>
+    </nav>
+</div>
+<footer>
+    <small>&copy JAC Enterprises Team 4 2022</small>
+</footer>
 </body>
 </html>
