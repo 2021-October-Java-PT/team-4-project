@@ -18,7 +18,7 @@ public class IslandController {
         this.islandRepo = islandRepo;
     }
 
-    @RequestMapping("/country/{id}")
+    @RequestMapping("/island/{id}")
     public String displaySingleIsland(@PathVariable Long id, Model model) {
 
         Optional<Island> foundIsland = islandRepo.findById(id);

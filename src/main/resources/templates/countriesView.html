@@ -11,7 +11,7 @@
         <section class="countriesList" th:each="country : ${countriesModel}">
             <ul>
                 <li>
-                    <a class="btn" th:href="@{/countries/{id}(id=${countries.id})}" th:text="${country.countryName}"></a>
+                    <a class="btn" th:href="@{/countries/{id}(id=${country.id})}" th:text="${country.countryName}"></a>
                 </li>
             </ul>
         </section>
