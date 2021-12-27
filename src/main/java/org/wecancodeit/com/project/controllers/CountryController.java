@@ -24,6 +24,12 @@ public class CountryController {
 
         Optional<Country> foundCountry = countryRepo.findById(id);
         model.addAttribute("singleCountry",foundCountry.get());
-        return "country.html";
+        return "countryView";
+    }
+
+    @RequestMapping("/countries")
+    public String displayCountries(Model model){
+        model.addAttribute("countries", countryRepo.findAll());
+        return "countriesView";
     }
 }

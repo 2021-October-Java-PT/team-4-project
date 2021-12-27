@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Countries View</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
+    <title>Countries</title>
 </head>
 <body>
-<h1>Countries View</h1>
+<div class="container">
+    <main class="countries">
+        <h1>Countries</h1>
+        <section class="countriesList" th:each="country : ${countriesModel}">
+            <ul>
+                <li>
+                    <a class="btn" th:href="@{/countries/{id}(id=${countries.id})}" th:text="${country.countryName}"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <nav>
+        <a class="btn" th:href="@{/}">Go Home</a>
+    </nav>
+</div>
+<footer>
+    <small>&copy JAC Enterprises Team 4 2022</small>
+</footer>
 </body>
 </html>

@@ -12,17 +12,23 @@ import java.util.Optional;
 @Controller
 public class IslandController {
 
-        private IslandRepository islandRepo;
+    private IslandRepository islandRepo;
 
-        public IslandController(IslandRepository islandRepo) {
-            this.islandRepo = islandRepo;
-        }
+    public IslandController(IslandRepository islandRepo) {
+        this.islandRepo = islandRepo;
+    }
 
-        @RequestMapping("/country/{id}")
-        public String displaySingleIsland(@PathVariable Long id, Model model){
+    @RequestMapping("/country/{id}")
+    public String displaySingleIsland(@PathVariable Long id, Model model) {
 
-            Optional<Island> foundIsland = islandRepo.findById(id);
-            model.addAttribute("singleIsland",foundIsland.get());
-            return "island.html";
-        }
+        Optional<Island> foundIsland = islandRepo.findById(id);
+        model.addAttribute("singleIsland", foundIsland.get());
+        return "islandView";
+    }
+
+    @RequestMapping("/islands")
+    public String displayIslands(Model model) {
+        model.addAttribute("islands", islandRepo.findAll());
+        return "islandsView";
+    }
 }
