@@ -21,23 +21,32 @@ a:hover {
   transform: scale(1.5);
 }
 
+.headshot {
+  max-width: 300px;
+  border-radius: 25%;
+}
+
 nav {
   margin-bottom: 5rem;
 
 }
 
-p.landing {
+p {
   margin: 10rem 20rem 10rem 20rem;
   font-weight: bolder;
   font-size: 1.2rem;
 }
 
 #github {
+  all: unset;
   height: 25px;
+  padding-bottom: 30px;
 }
 
 #linkedin {
+  all:unset;
   height: 25px;
+  padding-bottom: 30px;
 }
 
 .world-map{
