@@ -21,9 +21,9 @@ public class Waterway {
     public Waterway(){
     }
 
-    public Waterway(String continentName, String continentDesc, String imgUrl) {
-        this.waterwayName = continentName;
-        this.waterwayDesc = continentDesc;
+    public Waterway(String waterwayName, String waterwayDesc, String imgUrl) {
+        this.waterwayName = waterwayName;
+        this.waterwayDesc = waterwayDesc;
         this.imgUrl = imgUrl;
     }
 
@@ -31,11 +31,11 @@ public class Waterway {
         return id;
     }
 
-    public String getContinentName() {
+    public String getWaterwayName() {
         return waterwayName;
     }
 
-    public String getContinentDesc() {
+    public String getWaterwayDesc() {
         return waterwayDesc;
     }
 
