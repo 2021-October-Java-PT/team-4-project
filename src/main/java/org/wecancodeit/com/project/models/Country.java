@@ -1,6 +1,8 @@
 package org.wecancodeit.com.project.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 @Entity
@@ -22,10 +24,12 @@ public class Country {
 
     }
 
-    public Country(String countryName, String countryDesc, String imgUrl) {
+    public Country(String countryName, String countryDesc, String imgUrl, Continent continent, Island...islands) {
         this.countryName = countryName;
         this.countryDesc = countryDesc;
         this.imgUrl = imgUrl;
+        this.continent=continent;
+        this.islands=new ArrayList<>(Arrays.asList(islands));
     }
 
     public Long getId() {
@@ -47,4 +51,9 @@ public class Country {
     public Collection<Island> getIslands() {
         return islands;
     }
+
+    public Continent getContinent(){
+        return continent;
+    }
+
 }

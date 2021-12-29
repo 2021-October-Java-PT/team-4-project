@@ -6,11 +6,22 @@
 </head>
 <body>
 <div class="container">
-    <main class="continent">
+    <section class="continent">
         <h1 th:text ="${continentModel.continentName}"></h1>
         <img th:src="@{${continentModel.imgUrl}}" alt="">
         <p><strong>Description: </strong><span class="continentDetail" th:text="${continentModel.continentDesc}">Continent</span></p>
-    </main>
+    </section>
+        <section class="countriesList">
+            <h2 class="">Here is a list of countries:</h2>
+            <nav class="" th:each="country:${continentModel.countries}">
+<!--                <ul class="">-->
+<!--                    <li class="" th:each="country:${continentModel.countries}">-->
+                        <a class="btn" th:href="@{'/countries/'+ ${country.id}}"
+                           th:text="${country.countryName}"></a>
+<!--                    </li>-->
+<!--                </ul>-->
+            </nav>
+    </section>
     <nav>
         <a class="btn" th:href="@{/continents}">Go back to continents</a>
         <a class="btn" th:href="@{/}">Go home</a>

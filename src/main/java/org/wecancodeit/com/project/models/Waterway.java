@@ -1,9 +1,6 @@
 package org.wecancodeit.com.project.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -15,8 +12,8 @@ public class Waterway {
     private String waterwayDesc;
     private String imgUrl;
 
-//    @OneToMany(mappedBy = "continent")
-//    private Collection<Country> countries;
+    @ManyToOne
+    private Island island;
 
     public Waterway(){
     }
@@ -43,7 +40,7 @@ public class Waterway {
         return imgUrl;
     }
 
-//    public Collection<Country> getCountries(){
-//        return countries;
-//    }
+    public Island getIsland(){
+        return island;
+    }
 }
