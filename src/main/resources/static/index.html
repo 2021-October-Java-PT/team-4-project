@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>JAC Enterprises</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles\styles.css" />
-  </head>
-  <body>
-    <h1>JAC Enterprises</h1>
-    <h2>Where your adventure begins</h2>
-    <p class="landing">
-      Welome to JAC Enterprises, we would love to help you find your next
-      adventure. JAC prides itself on educating all their customers on what can
-      be expected on an adventure. On your island hopping adventure you will
-      learn about Earth's various ecosystems and unique terrains. Our motto is,
-      "Vincit Qui Se Vincit" which means, "He/she conquers who conquers
-      him/herself."
-    </p>
-    <h3>Click below to start your adventure:</h3>
-    <nav>
-      <a href="#">About Us</a>
-      <a href="src\main\resources\templates\continentsView.html"
-        >View By Contenents</a
-      >
-      <a href="src\main\resources\templates\countriesView.html"
-        >View By Countries</a
-      >
-      <a href="src\main\resources\templates\islandsView.html"
-        >View By Islands</a
-      >
-    </nav>
-    <h3>Or click on the map:</h3>
-    <img
-      src="images\world-map.jpg"
-      alt="Map"
-      usemap="#worldmapper"
-      class="world-map"
-    />
-    <map name="worldmapper">
-      <area
-        shape="poly"
-        coords="50,113,57,155,161,248,176,229,215,163,174,94,64,107"
-        href="src\main\resources\templates\continentView.html"
-        alt="North America"
-      />
-      <area
-        shape="poly"
-        coords="170,239,167,261,178,282,182,351,192,351,234,264,194,233,179,236"
-        href="src\main\resources\templates\continentView.html"
-        alt="South America"
-      />
-      <area
-        shape="poly"
-        coords="364,83,268,150,273,197,354,194,376,80"
-        href="src\main\resources\templates\continentView.html"
-        alt="Europe"
-      />
-      <area
-        shape="poly"
-        coords="329,206,343,235,441,265,535,136,525,82,376,75"
-        href="src\main\resources\templates\continentView.html"
-        alt="Asia"
-      />
-      <area
-        shape="poly"
-        coords="269,201,254,236,312,308,366,297,356,236,328,207,297,195"
-        href="src\main\resources\templates\continentView.html"
-        alt="Africa"
-      />
-      <area shape="rect" coords="422,272,502,320" href="#" alt="Austrailia" />
-    </map>
-  </body>
-  <footer><small>&copy JAC Enterprises 2022</small></footer>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>JAC Enterprises</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles\styles.css" />
+</head>
+
+<body>
+  <h1>JAC Enterprises</h1>
+  <h2>Where your adventure begins</h2>
+  <p class="landing">
+    Welome to JAC Enterprises, we would love to help you find your next
+    adventure. JAC prides itself on educating all their customers on what can
+    be expected on an adventure. On your island hopping adventure you will
+    learn about Earth's various ecosystems and unique terrains. Our motto is,
+    "Vincit Qui Se Vincit" which means, "He/she conquers who conquers
+    him/herself."
+  </p>
+  <div class="services">
+  <p>Each location provides different types of adventures! Guests have their choice of spelunking, scuba diving, hiking, or fishing depending on which location they choose. Most locations provide a combination of these activites. </p>
+  </div>
+
+  
+
+
+  <h3>Click below to start your adventure:</h3>
+  <nav>
+    <a href="#">About Us</a>
+    <a href="src\main\resources\templates\continentsView.html">View By Continents</a>
+    <a href="src\main\resources\templates\countriesView.html">View By Countries</a>
+    <a href="src\main\resources\templates\islandsView.html">View By Islands</a>
+  </nav>
+  <h3>Or click on the map:</h3>
+  <img src="images\world-map.jpg" alt="Map" usemap="#worldmapper" class="world-map" />
+  <map name="worldmapper">
+    <area shape="poly" coords="50,113,57,155,161,248,176,229,215,163,174,94,64,107"
+      href="src\main\resources\templates\continentView.html" alt="North America" />
+    <area shape="poly" coords="170,239,167,261,178,282,182,351,192,351,234,264,194,233,179,236"
+      href="src\main\resources\templates\continentView.html" alt="South America" />
+    <area shape="poly" coords="364,83,268,150,273,197,354,194,376,80"
+      href="src\main\resources\templates\continentView.html" alt="Europe" />
+    <area shape="poly" coords="329,206,343,235,441,265,535,136,525,82,376,75"
+      href="src\main\resources\templates\continentView.html" alt="Asia" />
+    <area shape="poly" coords="269,201,254,236,312,308,366,297,356,236,328,207,297,195"
+      href="src\main\resources\templates\continentView.html" alt="Africa" />
+    <area shape="rect" coords="422,272,502,320" href="#" alt="Austrailia" />
+  </map>
+</body>
+<footer><small>&copy JAC Enterprises 2022</small></footer>
+
 </html>

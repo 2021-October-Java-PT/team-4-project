@@ -27,9 +27,15 @@ nav {
 }
 
 p.landing {
-  margin: 10rem 20rem 10rem 20rem;
+  margin: 10rem 20rem 8rem 20rem;
   font-weight: bolder;
   font-size: 1.2rem;
+}
+
+.services {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin: 0rem 20rem 5rem 20rem;
 }
 
 #github {
