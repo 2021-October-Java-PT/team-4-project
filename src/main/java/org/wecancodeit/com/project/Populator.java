@@ -28,12 +28,26 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Continent northAmerica = new Continent("North America","description","image url");
-        Continent southAmerica = new Continent("South America", "Like North America But south..haha","imageurl");
-        Continent europe = new Continent("Europe", "description","image url");
-        Continent africa = new Continent("Africa", "description", "image url");
-        Continent asia = new Continent("Asia","Cool Place", "image url");
-        Continent oceania = new Continent("Oceania","description","image url");
+        Continent northAmerica = new Continent("North America","North America is a continent in the Northern" +
+                " Hemisphere and almost entirely within the Western Hemisphere. It can also be described as the" +
+                " northern subcontinent of a single continent, America. It is bordered to the north by the " +
+                "Arctic Ocean, to the east by the Atlantic Ocean, to the southeast by South America and the " +
+                "Caribbean Sea, and to the west and south by the Pacific Ocean","image url");
+        Continent southAmerica = new Continent("South America", "South America is a continent entirely in the" +
+                " Western Hemisphere and mostly in the Southern Hemisphere, with a relatively small portion" +
+                " in the Northern Hemisphere. ","imageurl");
+        Continent europe = new Continent("Europe", "Europe is a landmass variously recognised as part of " +
+                "Eurasia or a continent in its own right, located entirely in the Northern Hemisphere and mostly" +
+                " in the Eastern Hemisphere. It comprises the westernmost peninsulas of the continental landmass","image url");
+        Continent africa = new Continent("Africa", "Africa is the world's second-largest and second-most " +
+                "populous continent, after Asia in both cases The continent is surrounded by the Mediterranean Sea" +
+                " to the north, the Isthmus of Suez and the Red Sea to the northeast, the Indian Ocean to the " +
+                "southeast and the Atlantic Ocean to the west. ", "image url");
+        Continent asia = new Continent("Asia","Earth's largest and most populous continent located primarily in the " +
+                "Eastern and Northern Hemispheres. In general terms, Asia is bounded on the east by the Pacific Ocean," +
+                " on the south by the Indian Ocean, and on the north by the Arctic Ocean. ", "image url");
+        Continent oceania = new Continent("Oceania","Oceania is the smallest in land area and the second smallest " +
+                "in population after Antarctica.It also spans the eastern and western Hemispheres","image url");
         continentRepo.save(northAmerica);
         continentRepo.save(southAmerica);
         continentRepo.save(europe);
@@ -41,21 +55,52 @@ public class Populator implements CommandLineRunner {
         continentRepo.save(asia);
         continentRepo.save(oceania);
 
-        Country unitedStates = new Country("United States", "description", "image url");
-        Country britain = new Country("Britain","description","image url");
-        Country chile = new Country("Chile", "description", "image url");
-        Country columbia = new Country("Columbia","description","image url");
-        Country spain = new Country("Spain", "description", "image url");
-        Country denmark = new Country("Denmark","description","image url");
-        Country netherlands = new Country("Netherlands", "description", "image url");
-        Country germany = new Country("Germany","description","image url");
-        Country guinea = new Country("Guinea", "description", "image url");
-        Country mozambique = new Country("Mozambique","description","image url");
-        Country sierraLeone = new Country("Sierra Leone", "description", "image url");
-        Country thailand = new Country("Thailand","description","image url");
-        Country philippines = new Country("Philippines", "description", "image url");
-        Country newZealand = new Country("New Zealand","description","image url");
-        Country france = new Country("France","description","image url");
+        Country unitedStates = new Country("United States", "The United States of America is the world's" +
+                " third largest country in size and nearly the third largest in terms of" +
+                " population. Located in North America, the country is bordered on the west by " +
+                "the Pacific Ocean and to the east by the Atlantic Ocean. ", "image url");
+        Country britain = new Country("Britain","Great Britain is an island in the North" +
+                " Atlantic Ocean off the northwest coast of continental Europe.The island is dominated by" +
+                " a maritime climate with narrow temperature differences between seasons. ","image url");
+        Country chile = new Country("Chile", "Chile, officially the Republic of Chile,[b] is a country " +
+                "in the western part of South America. It occupies a long, narrow strip of land between " +
+                "the Andes to the east and the Pacific Ocean to the west.", "image url");
+        Country columbia = new Country("Columbia","Colombia, is a transcontinental country spanning " +
+                "South America and an insular region in North America. It is bordered by the Caribbean " +
+                "Sea to the north, Venezuela to the east, Brazil to the southeast, Ecuador and Peru to the " +
+                "south, the Pacific Ocean to the west, and Panama to the northwest.","image url");
+        Country spain = new Country("Spain", "Spain is a country in southwestern Europe with some pockets of " +
+                "territory in the Mediterranean Sea, offshore in the Atlantic Ocean and across the Strait" +
+                " of Gibraltar.Its continental European territory is situated on the Iberian Peninsula, " +
+                "and its insular territory includes the Balearic Islands in the Mediterranean Sea, several small" +
+                " islands in the Alboran Sea and the Canary Islands in the Atlantic Ocean.", "image url");
+        Country denmark = new Country("Denmark","Denmark is a Nordic country in Northern Europe. " +
+                "Includes the autonomous territories of the Faroe Islands and Greenland in the North Atlantic Ocean","image url");
+        Country netherlands = new Country("Netherlands", "is a country located in Northwestern " +
+                "Europe with territories in the Caribbean.", "image url");
+        Country germany = new Country("Germany","Germainy is a country in central Europe and is between the Baltic" +
+                " and North seas to the north, and the Alps to the south","image url");
+        Country guinea = new Country("Guinea", "is a coastal country in West Africa. Guinea borders the Atlantic Ocean" +
+                " to the west, Guinea-Bissau to the northwest, Senegal to the north, Mali to the northeast, Cote d'Ivoire " +
+                "to the southeast, and Sierra Leone and Liberia to the south", "image url");
+        Country mozambique = new Country("Mozambique","Muzambhiki), is a country located in Southeastern Africa bordered" +
+                " by the Indian Ocean to the east, Tanzania to the north, Malawi and Zambia to the northwest, " +
+                "Zimbabwe to the west","image url");
+        Country sierraLeone = new Country("Sierra Leone", "Salone, is a country on the southwest coast of" +
+                " West Africa. It is bordered by Liberia to the southeast and Guinea to the northeast. Sierra " +
+                "Leone has a tropical climate with a diverse environment ranging from savanna to rainforests", "image url");
+        Country thailand = new Country("Thailand","Thailand, is a country in Southeast Asia and is in the center" +
+                " of the Indochinese Peninsula,t is bordered to the north by Myanmar and Laos, to the east by" +
+                " Laos and Cambodia, to the south by the Gulf of Thailand and Malaysia, and to the west by" +
+                " the Andaman Sea ","image url");
+        Country philippines = new Country("Philippines", " in Southeast Asia. It is situated in the western Pacific" +
+                " Ocean, and consists of about 7,640 islands, that are broadly categorized under three main" +
+                " geographical divisions from north to south: Luzon, Visayas, and Mindanao.", "image url");
+        Country newZealand = new Country("New Zealand","New Zealand is an island country in the southwestern" +
+                " Pacific Ocean. It consists of two main landmasses—the North Island and the South Island. In additon" +
+                " there are over 700 smaller islands","image url");
+        Country france = new Country("France","France is a transcontinental country spanning Western Europe and " +
+                "overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans.","image url");
         countryRepo.save(unitedStates);
         countryRepo.save(britain);
         countryRepo.save(chile);
