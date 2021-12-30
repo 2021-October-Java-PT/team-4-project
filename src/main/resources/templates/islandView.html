@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
-    <title th:text = "${islandModel.islandName}"></title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    </link>
+    <title th:text="${islandModel.islandName}"></title>
 </head>
+
 <body>
-<div class="container">
-    <main class="island">
-        <h1 th:text ="${islandModel.islandName}"></h1>
-        <img th:src="@{${islandModel.imgUrl}}" alt="Image of island">
-        <p><strong>Description: </strong><span class="islandDetail" th:text="${islandModel.islandDesc}">Island</span></p>
-    </main>
-    <nav>
-        <a class="btn" th:href="@{/islands}">Go back to islands</a>
-        <a class="btn" th:href="@{/}">Go Home</a>
-    </nav>
-</div>
-<footer>
-    <small>&copy JAC Enterprises Team 4 2022</small>
-</footer>
+    <div class="container">
+        <main class="island">
+            <h1 th:text="${islandModel.islandName}"></h1>
+            <img th:src="@{${islandModel.imgUrl}}" alt="Image of island">
+            <p><strong>Description: </strong><span class="islandDetail"
+                    th:text="${islandModel.islandDesc}">Island</span></p>
+        </main>
+
+        <div class="itinerary">
+            <p class="itinerary-description">
+                Each day guests will have the option to choose two of the four activities. The days will be split into
+                two time slots; Activity 1 in the morning and Activity 2 in the afternoon. We will be moving to a
+                different island each day throughout the five-day trip.
+            </p>
+            <h3 class="activites-list-header">List of Activity Options</h3>
+            <ol class="activites-list">
+                <li><b>Scuba Diving</b>
+                    <p>Join our Scuba instructors on a 3 hour tour of some of the most unique, beautiful reefs in the
+                        world. The instructors will teach you about the natural wonders found beneath the water's
+                        surface! If you're lucky, you may even find Nemo!</p>
+                </li>
+                <li><b>Spelunking</b>
+                    <p>This one's not for the faint of heart! Join our resident field geologist on a 3 hour caving
+                        adventure! You will learn about the natural cave formations found around the islands. By the end
+                        of the excursion, you'll be able to identify some of the types of rock formations.
+                        Wouldn't that be stalacTIGHT?!</p>
+                </li>
+                <li><b>Hiking</b>
+                    <p>Go take a hike! I think I will! Join our two field biologists on a 3 hour guided tour of the
+                        island. You will find information about the flora and fauna as well as some of the ecology of
+                        the island. Make sure to bring comfortable, proper hiking footwear!</p>
+                </li>
+                <li><b>Bird-Watching</b>
+                    <p>This is for the people that just want to soak in the views or recover from some of the other more
+                        physical activities. Join our ornithologist on a 3 hour guided <em>light</em> hike. You will be
+                        able to see and identify many species of birds found around the island. We provide the
+                        binoculars, but you may want to bring your camera.</p>
+                </li>
+            </ol>
+        </div>
+        <nav>
+            <a class="btn" th:href="@{/islands}">Go back to islands</a>
+            <a class="btn" th:href="@{/}">Go Home</a>
+        </nav>
+    </div>
+    <footer>
+        <small>&copy JAC Enterprises Team 4 2022</small>
+    </footer>
 </body>
+
 </html>
