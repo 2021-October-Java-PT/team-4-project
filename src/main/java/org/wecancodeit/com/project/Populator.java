@@ -117,7 +117,7 @@ public class Populator implements CommandLineRunner {
         Country sierraLeone = new Country("Sierra Leone", "description", "image url", africa, bananaIslands);
         Country thailand = new Country("Thailand","description","image url", asia, westcoast, southernIslands);
         Country philippines = new Country("Philippines", "description", "image url", asia, bacuitGroup);
-        Country newZealand = new Country("New Zealand","description","image url", oceania, aucklandIslands );
+        Country newZealand = new Country("New Zealand","description","image url", oceania, aucklandIslands);
         Country france = new Country("France","description","image url", oceania, australIslands);
         countryRepo.save(unitedStates);
         countryRepo.save(britain);
