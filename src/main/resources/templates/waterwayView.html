@@ -2,23 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
-    <title>Islands</title>
+    <title th:text = "${waterwayModel.waterwayName}"></title>
 </head>
 <body>
 <div class="container">
-    <main class="islands">
-        <h1>Islands</h1>
-        <section class="islandsList" th:each="island : ${islandsModel}">
-            <ul>
-                <li>
-                    <a class="btn" th:href="@{/islands/{id}(id=${island.id})}" th:text="${island.islandName}"></a>
-                </li>
-            </ul>
-        </section>
+    <main class="waterway">
+        <h1 th:text ="${waterwayModel.waterwayName}"></h1>
+        <img th:src="@{${waterwayModel.imgUrl}}" alt="Image of waterway">
+        <p><strong>Description: </strong><span class="waterwayDetail" th:text="${waterwayModel.waterwayDesc}">Waterway</span></p>
     </main>
     <nav>
         <a class="btn" th:href="@{/continents}">View by Continents</a>
         <a class="btn" th:href="@{/countries}">View by Countries</a>
+        <a class="btn" th:href="@{/islands}">View by Islands</a>
         <a class="btn" th:href="@{/waterways}">View by Waterways</a>
         <a class="btn" th:href="@{/}">Home</a>
     </nav>
