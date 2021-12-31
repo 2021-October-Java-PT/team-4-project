@@ -21,7 +21,6 @@ public class CountryController {
 
     @RequestMapping("/countries/{id}")
     public String displaySingleCountry(@PathVariable Long id, Model model){
-
         Optional<Country> foundCountry = countryRepo.findById(id);
         model.addAttribute("countryModel",foundCountry.get());
         return "countryView";

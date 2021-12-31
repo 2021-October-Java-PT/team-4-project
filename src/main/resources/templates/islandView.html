@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     </link>
     <title th:text="${islandModel.islandName}"></title>
 </head>
-
-<body>
-    <div class="container">
-        <main class="island">
-            <h1 th:text="${islandModel.islandName}"></h1>
-            <img th:src="@{${islandModel.imgUrl}}" alt="Image of island">
-            <p><strong>Description: </strong><span class="islandDetail"
-                    th:text="${islandModel.islandDesc}">Island</span></p>
-        </main>
-
-        <div class="itinerary">
+<div class="container">
+    <main class="island">
+        <h1 th:text ="${islandModel.islandName}"></h1>
+        <img th:src="@{${islandModel.imgUrl}}" alt="Image of island">
+        <p><strong>Description: </strong><span class="islandDetail" th:text="${islandModel.islandDesc}">Island</span></p>
+          <div class="itinerary">
             <p class="itinerary-description">
                 Each day guests will have the option to choose two of the four activities. The days will be split into
                 two time slots; Activity 1 in the morning and Activity 2 in the afternoon. We will be moving to a
@@ -48,14 +42,28 @@
                 </li>
             </ol>
         </div>
-        <nav>
-            <a class="btn" th:href="@{/islands}">Go back to islands</a>
-            <a class="btn" th:href="@{/}">Go Home</a>
+    <section class="waterwaysList">
+        <h2 class="">Waterways in: <span class="" th:text="${islandModel.islandName}"></span></h2>
+        <nav class="" th:each="waterway:${islandModel.waterways}">
+            <!--                <ul class="">-->
+            <!--                    <li class="" th:each="country:${continentModel.countries}">-->
+            <a class="btn" th:href="@{'/waterways/'+ ${waterway.id}}"
+               th:text="${waterway.waterwayName}"></a>
+            <!--                    </li>-->
+            <!--                </ul>-->
         </nav>
-    </div>
-    <footer>
-        <small>&copy JAC Enterprises Team 4 2022</small>
-    </footer>
+    </section>
+    <nav>
+        <a class="btn" th:href="@{/continents}">View by Continents</a>
+        <a class="btn" th:href="@{/countries}">View by Countries</a>
+        <a class="btn" th:href="@{/islands}">View by Islands</a>
+        <a class="btn" th:href="@{/waterways}">View by Waterways</a>
+        <a class="btn" th:href="@{/}">Home</a>
+    </nav>
+</main>
+</div>
+<footer>
+    <small>&copy JAC Enterprises Team 4 2022</small>
+</footer>
 </body>
-
 </html>
