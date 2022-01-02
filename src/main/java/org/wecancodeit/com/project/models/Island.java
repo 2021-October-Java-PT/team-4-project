@@ -1,9 +1,6 @@
 package org.wecancodeit.com.project.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class Island {
@@ -11,6 +8,7 @@ public class Island {
     @GeneratedValue
     private Long id;
     private String islandName;
+    @Lob
     private String islandDesc;
     private String imgUrl;
 

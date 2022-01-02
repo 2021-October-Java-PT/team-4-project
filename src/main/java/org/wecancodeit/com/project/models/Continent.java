@@ -2,10 +2,7 @@ package org.wecancodeit.com.project.models;
 
 import ch.qos.logback.core.joran.action.IADataForComplexProperty;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -14,6 +11,7 @@ public class Continent {
     @GeneratedValue
     private Long id;
     private String continentName;
+    @Lob
     private String continentDesc;
     private String imgUrl;
 

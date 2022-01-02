@@ -1,9 +1,6 @@
 package org.wecancodeit.com.project.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -12,6 +9,7 @@ public class Waterway {
     @GeneratedValue
     private Long id;
     private String waterwayName;
+    @Lob
     private String waterwayDesc;
     private String imgUrl;
 
