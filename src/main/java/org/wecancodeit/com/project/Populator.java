@@ -119,24 +119,59 @@ public class Populator implements CommandLineRunner {
         countryRepo.save(france);
 
         //Islands are actually island chains and specific islands would need to go in description
-        Island seaIslandsChain = new Island("Sea Islands Chain", "description", "image url");
-        Island caymanIslands = new Island("Cayman Islands", "description","image url");
-        Island pribilofIslands = new Island("Pribilof Islands", "description","image url");
-        Island archIslands = new Island("Archipielago de Chiloe","description","image of");
-        Island archJuan = new Island("Archipielago Jaun Fernandez", "description","image of");
-        Island rosarioIslands = new Island("Rosario Islands","description","image url");
-        Island balearicIslands = new Island("Balearic Islands","description","image url");
+        Island seaIslandsChain = new Island("Sea Islands Chain", "The Sea Islands are a chain" +
+                " of tidal and barrier islands on the Atlantic Ocean coast of the Southeastern United" +
+                " States. Numbering over 100, they are located between the mouths of the Santee and St." +
+                " Johns Rivers along the coast of South Carolina, Georgia, and Florida", "image url");
+        Island caymanIslands = new Island("Cayman Islands", " territory comprises the three islands of " +
+                "Grand Cayman, Cayman Brac and Little Cayman, which are located to the south of Cuba and" +
+                " northeast of Honduras, between Jamaica and Mexico's Yucatán Peninsula.","image url");
+        Island pribilofIslands = new Island("Pribilof Islands", "are a group of four volcanic islands off the " +
+                "coast of mainland Alaska, in the Bering Sea, about 200 miles (320 km) north of Unalaska and 200" +
+                " miles (320 km) southwest of Cape Newenham.","image url");
+        Island archIslands = new Island("Archipielago de Chiloe","are a group of small islands, off Port Albemarle" +
+                " on West Falkland in the Falkland Islands. They are uninhabited, and accessible only by" +
+                " boat. They are so called because the largest of the group has a natural" +
+                " arch in it, large enough to allow a fair sized boat through.The islands include Big Arch" +
+                " Island Clump Island Tussac Island Pyramid Rock Last Rock Albemarle Rock ","image of");
+        Island archJuan = new Island("Archipielago Jaun Fernandez", "is a group of islands located in the " +
+                "South Pacific, more than 670 km west of the coasts of South America . It is made up of the" +
+                " Robinson Crusoe islands (known until 1966 as Más a Tierra ), Alejandro Selkirk " +
+                "(known until 1966 as Más Afuera ), the Santa Clara islet and smaller islets.","image of");
+        Island rosarioIslands = new Island("Rosario Islands","also referred to as Corales Islas del Rosario" +
+                " (Coral Islands of Rosario),is an archipelago located off the coast of Colombia, " +
+                "approximately 100 kilometres (62 miles) from Cartagena.It is one of the 46 Natural National" +
+                " Parks of Colombia. ","image url");
+        Island balearicIslands = new Island("Balearic Islands","are a Spanish archipelago in the Balearic Sea," +
+                " near the eastern coast of the Iberian Peninsula. Its four largest islands are Mallorca," +
+                " Menorca, Ibiza, and Formentera. ","image url");
         Island bornholm = new Island("Bornholm Falster Lolland", "description","image url");
-        Island frisianIslands = new Island("Frisian Islands","descrition","image url");
-        Island losIslands = new Island("Los Islands","description", "image url");
-        Island quirimbasIslands = new Island("Quirimbas Islands", "description","image url");
-        Island bananaIslands = new Island("Banana Islands","description","image");
+        Island frisianIslands = new Island("Frisian Islands","The Frisian Islands, also known as the Wadden " +
+                "Islands or the Wadden Sea Islands, form an archipelago at the eastern edge of the North Sea in " +
+                "northwestern Europe, stretching from the northwest of the Netherlands through Germany" +
+                " to the west of Denmark.","image url");
+        Island losIslands = new Island("Los Islands","are an island group lying off Conakry in Guinea, on the" +
+                " west coast of Africa.There are three main islands: Tamara (Fortoba), Kassa and Roume. ", "image url");
+        Island quirimbasIslands = new Island("Quirimbas Islands", "The Quirimbas Islands lie in the Indian" +
+                " Ocean off northeastern Mozambique. The archipelago consists of about 32 islands, including Ibo, " +
+                "Matemo, Medjumbe, Quirimba, Metundo, Quisiva, Vamizi Island and Rolas Island all going up to the " +
+                "Tanzanian border.","image url");
+        Island bananaIslands = new Island("Banana Islands","The Banana Islands are a group of islands that " +
+                "lie off the coast of Yawri Bay. Three islands make up the Banana Islands: Dublin and Ricketts are " +
+                "linked by a stone causeway. The third Mes-Meheux is a privately owned island.","image");
         Island westcoast = new Island("West Coast Islands","description","image");
         Island southernIslands = new Island("Southern Islands","description","image");
         Island bacuitGroup = new Island("Bacuit Group of Islands","description","image");
-        Island hawaii = new Island("Hawaii", "description", "image");
-        Island aucklandIslands = new Island("Auckland Islands","descriptions","image");
-        Island australIslands = new Island("AustralIslands","descriptions","image");
+        Island hawaii = new Island("Hawaii", "Hawaiian Islands are an archipelago of eight major islands, several atolls, numerous" +
+                " smaller islets, and seamounts in the North Pacific Ocean. The main islands include: " +
+                "The Big Islands, The Valley Ise, The Gathering Place, The Garden Isle, The Friendly Isle," +
+                " The Pineapple Isle, The Forbidden Isle, The Target Isle", "image");
+        Island aucklandIslands = new Island("Auckland Islands","The main Auckland Island, is surrounded by smaller " +
+                "Adams Island, Enderby Island, Disappointment Island, Ewing Island, Rose Island, Dundas Island, " +
+                "and Green Island","image");
+        Island australIslands = new Island("AustralIslands","are the southernmost group of islands in French " +
+                "Polynesia, an overseas country of the French Republic in the South Pacific. Many small islands " +
+                "populate this chain","image");
         islandRepo.save(seaIslandsChain);
         islandRepo.save(caymanIslands);
         islandRepo.save(pribilofIslands);
@@ -156,18 +191,40 @@ public class Populator implements CommandLineRunner {
         islandRepo.save(aucklandIslands);
         islandRepo.save(australIslands);
 
-        Waterway atlanticOcean = new Waterway("Atlantic Ocean","description","image");
-        Waterway carribeanSea = new Waterway("Carribean Sea","description","image");
-        Waterway beringSea = new Waterway("BeringSea","description","image");
-        Waterway pacificOcean = new Waterway("PacificOcean","description","image");
-        Waterway balearicSea = new Waterway("balearicSea","description","image");
-        Waterway balticSea = new Waterway("Baltic Sea","description","image");
-        Waterway northSea = new Waterway("North Sea","description","image");
-        Waterway indianOcean = new Waterway("Indian Ocean","description","image");
-        Waterway yawriBay = new Waterway("Yawri bay","description","image");
-        Waterway gulfOfThailand = new Waterway("Gulf of Thailand","description","image");
+        Waterway atlanticOcean = new Waterway("Atlantic Ocean","The Atlantic Ocean is the" +
+                " second-largest of the world's five oceans and covers approximately 20% " +
+                " of Earth's surface ","image");
+        Waterway carribeanSea = new Waterway("Carribean Sea","Carribean Sea is a sea of the Atlantic Ocean in " +
+                "the tropics of the Western Hemisphere.  It is bounded by Mexico and Central America to the west and" +
+                " south west, to the north by the Greater Antilles starting with Cuba, to the east by the Lesser " +
+                "Antilles, and to the south by the north coast of South Americad","image");
+        Waterway beringSea = new Waterway("BeringSea"," is a marginal sea of the Northern Pacific Ocean." +
+                " It forms, along with the Bering Strait, the divide between the two largest landmasses" +
+                " on Earth: Eurasia and The Americas","image");
+        Waterway pacificOcean = new Waterway("PacificOcean","The Pacific Ocean is the largest" +
+                " and deepest of Earth's five oceanic divisions. It extends from the Arctic Ocean" +
+                " in the north to the Southern Ocean in the south and is bounded by the continents" +
+                " of Asia and Australia in the west and the Americas in the east.","image");
+        Waterway balearicSea = new Waterway("balearicSea","Balearic Sea is a body of water in the" +
+                " Mediterranean Sea near the Balearic Islands.The Ebro River flows into this small sea.","image");
+        Waterway balticSea = new Waterway("Baltic Sea","The Baltic Sea is an arm of the Atlantic" +
+                " Ocean, enclosed by Denmark, Estonia, Finland, Germany, Latvia, Lithuania, Poland, Russia," +
+                " Sweden and the North and Central European Plain.","image");
+        Waterway northSea = new Waterway("North Sea","The North Sea is a sea of the Atlantic Ocean between" +
+                " Great Britain. It is an epeiric sea on the European continental shelf, it connects to the ocean" +
+                " through the English Channel in the south and the Norwegian Sea in the north.","image");
+        Waterway indianOcean = new Waterway("Indian Ocean","The Indian Ocean is the third-largest of the world's five" +
+                " oceanic divisions. It is bounded by Asia to the north, Africa to the west and Australia to the east." +
+                " To the south it is bounded by the Southern Ocean","image");
+        Waterway yawriBay = new Waterway("Yawri bay","Yawri Bayis a bay in the coast of Sierra Leone on the Atlantic " +
+                "Ocean.","image");
+        Waterway gulfOfThailand = new Waterway("Gulf of Thailand","The Gulf of Thailand, also known as the Gulf of Siam, " +
+                "is a shallow inlet in the southwestern South China Sea, bounded between the southwestern shores" +
+                " of the Indochinese Peninsula and the northern half of the Malay Peninsula","image");
         Waterway bacuitBay = new Waterway("Bacuit Bay","description","image");
-        Waterway southernPacificOcean = new Waterway("Southern Pacific Ocean","description","image");
+        Waterway southernPacificOcean = new Waterway("Southern Pacific Ocean","The Pacific Ocean is divided into " +
+                "two laregely different bodies of water by the equator. On the southern part of this divide is " +
+                "the southern Pacific Ocean.","image");
         waterwayRepo.save(atlanticOcean);
         waterwayRepo.save(carribeanSea);
         waterwayRepo.save(beringSea);
