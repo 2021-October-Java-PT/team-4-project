@@ -19,17 +19,16 @@ public class CountryController {
         this.countryRepo = countryRepo;
     }
 
-    @RequestMapping("/continent/{id}")
+    @RequestMapping("/countries/{id}")
     public String displaySingleCountry(@PathVariable Long id, Model model){
-
         Optional<Country> foundCountry = countryRepo.findById(id);
-        model.addAttribute("singleCountry",foundCountry.get());
+        model.addAttribute("countryModel",foundCountry.get());
         return "countryView";
     }
 
     @RequestMapping("/countries")
     public String displayCountries(Model model){
-        model.addAttribute("countries", countryRepo.findAll());
+        model.addAttribute("countriesModel", countryRepo.findAll());
         return "countriesView";
     }
 }

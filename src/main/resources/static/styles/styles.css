@@ -31,15 +31,27 @@ nav {
 
 }
 
+
 p {
   margin: 5rem 20rem 5rem 20rem;
+
+p.landing {
+  margin: 10rem 20rem 8rem 20rem;
   font-weight: bolder;
   font-size: 1.2rem;
 }
 
+
 ul {
   list-style-type: none;
 }
+
+.services {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin: 0rem 20rem 5rem 20rem;
+}
+  
 #github {
   all: unset;
   height: 25px;
@@ -73,4 +85,14 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+
+.itinerary{
+  margin: 2rem 30rem 2rem 30rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
 

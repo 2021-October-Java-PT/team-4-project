@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <link rel="stylesheet" type="text/css" href="/styles/styles.css"></link>
-    <title th:text = "${countryModel.name}"></title>
+    <title th:text = "${countryModel.countryName}"></title>
 </head>
 <body>
 <div class="container">
@@ -11,9 +11,25 @@
         <img th:src="@{${countryModel.imgUrl}}" alt="Image of country">
         <p><strong>Description: </strong><span class="countryDetail" th:text="${countryModel.countryDesc}">Country</span></p>
     </main>
+    <section class="islandsList">
+        <h2 class="">Islands in: <span class="" th:text="${countryModel.countryName}"></span></h2>
+        <nav class="" th:each="island:${countryModel.islands}">
+            <!--                <ul class="">-->
+            <!--                    <li class="" th:each="country:${continentModel.countries}">-->
+            <a class="btn" th:href="@{'/islands/'+ ${island.id}}"
+               th:text="${island.islandName}"></a>
+            <!--                    </li>-->
+            <!--                </ul>-->
+        </nav>
+    </section>
     <nav>
-        <a class="btn" th:href="@{/countries}">Go back to countries</a>
-        <a class="btn" th:href="@{/index.html}">Go Home</a>
+
+        <a class="btn" th:href="@{/continents}">View by Continents</a>
+        <a class="btn" th:href="@{/countries}">View by Countries</a>
+        <a class="btn" th:href="@{/islands}">View by Islands</a>
+        <a class="btn" th:href="@{/waterways}">View by Waterways</a>
+        <a class="btn" th:href="@{/index.html}">Home</a>
+
     </nav>
 </div>
 <footer>
