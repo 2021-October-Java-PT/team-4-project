@@ -33,8 +33,11 @@ nav {
 
 p {
   margin: 5rem 20rem 5rem 20rem;
-  font-weight: bolder;
-  font-size: 1.2rem;
+}
+
+p.landing {
+  margin: 10rem 20rem 8rem 20rem;
+  
 }
 
 ul {
@@ -53,7 +56,7 @@ ul {
 }
 
 #linkedin {
-  all:unset;
+  all: unset;
   height: 25px;
   padding-bottom: 30px;
   padding-left: 10px;
@@ -65,7 +68,9 @@ ul {
 }
 
 section {
-
+  padding: 2rem;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .world-map{
@@ -73,4 +78,5 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+
 
