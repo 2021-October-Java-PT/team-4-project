@@ -16,10 +16,16 @@ public class WaterwayController {
 
     public WaterwayController(WaterwayRepository waterwayRepo){this.waterwayRepo=waterwayRepo;}
 
-    @RequestMapping("/waterway/{id}")
+    @RequestMapping("/waterways/{id}")
     public String displaySingleWaterway(@PathVariable Long id, Model model){
         Optional<Waterway> foundWaterway = waterwayRepo.findById(id);
-        model.addAttribute("singleWaterway",foundWaterway.get());
-        return "waterway.html";
+        model.addAttribute("waterwayModel",foundWaterway.get());
+        return "waterwayView";
+    }
+
+    @RequestMapping("/waterways")
+    public String displayWaterways(Model model) {
+        model.addAttribute("waterwaysModel", waterwayRepo.findAll());
+        return "waterwaysView";
     }
 }

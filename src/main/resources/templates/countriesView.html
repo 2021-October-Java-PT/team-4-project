@@ -11,13 +11,18 @@
         <section class="countriesList" th:each="country : ${countriesModel}">
             <ul>
                 <li>
-                    <a class="btn" th:href="@{/countries/{id}(id=${countries.id})}" th:text="${country.countryName}"></a>
+                    <a class="btn" th:href="@{/countries/{id}(id=${country.id})}" th:text="${country.countryName}"></a>
                 </li>
             </ul>
         </section>
     </main>
     <nav>
-        <a class="btn" th:href="@{/index.html}">Go Home</a>
+
+        <a class="btn" th:href="@{/continents}">View by Continents</a>
+        <a class="btn" th:href="@{/islands}">View by Islands</a>
+        <a class="btn" th:href="@{/waterways}">View by Waterways</a>
+        <a class="btn" th:href="@{/index.html}">Home</a>
+
     </nav>
 </div>
 <footer>

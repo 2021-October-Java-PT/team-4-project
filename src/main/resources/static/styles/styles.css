@@ -18,7 +18,6 @@ a:hover {
   background-image: unset;
   color: bisque;
   background-color: black;
-  
 }
 
 .headshot {
@@ -28,8 +27,8 @@ a:hover {
 
 nav {
   margin-bottom: 5rem;
-
 }
+
 
 p {
   margin: 5rem 20rem 5rem 20rem;
@@ -37,12 +36,19 @@ p {
 
 p.landing {
   margin: 10rem 20rem 8rem 20rem;
-  
+  font-weight: bolder;
 }
 
 ul {
   list-style-type: none;
 }
+
+.services {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin: 0rem 10rem 5rem 10rem;
+}
+  
 #github {
   all: unset;
   height: 25px;
@@ -78,5 +84,14 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+
+.itinerary{
+  margin: 2rem 30rem 2rem 30rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
 
 
