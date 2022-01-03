@@ -1,6 +1,7 @@
 package org.wecancodeit.com.project.models;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 public class Island {
@@ -15,10 +16,13 @@ public class Island {
     @ManyToOne
     private Country country;
 
+    @OneToMany
+    private Collection<Waterway> waterways;
+
     public  Island(){
     }
 
-    public Island(String islandName, String islandDesc, String imgUrl) {
+    public Island(String islandName, String islandDesc, String imgUrl, Waterway waterways) {
         this.islandName = islandName;
         this.islandDesc = islandDesc;
         this.imgUrl = imgUrl;
@@ -38,5 +42,13 @@ public class Island {
 
     public String getImgUrl() {
         return imgUrl;
+    }
+
+    public Country getCountry(){
+        return country;
+    }
+
+    public Collection<Waterway> getWaterways() {
+        return waterways;
     }
 }

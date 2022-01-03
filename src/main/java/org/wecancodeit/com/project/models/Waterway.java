@@ -13,15 +13,15 @@ public class Waterway {
     private String waterwayDesc;
     private String imgUrl;
 
-//    @OneToMany(mappedBy = "continent")
-//    private Collection<Country> countries;
+    @ManyToOne
+    private Island island;
 
     public Waterway(){
     }
 
-    public Waterway(String continentName, String continentDesc, String imgUrl) {
-        this.waterwayName = continentName;
-        this.waterwayDesc = continentDesc;
+    public Waterway(String waterwayName, String waterwayDesc, String imgUrl) {
+        this.waterwayName = waterwayName;
+        this.waterwayDesc = waterwayDesc;
         this.imgUrl = imgUrl;
     }
 
@@ -29,11 +29,11 @@ public class Waterway {
         return id;
     }
 
-    public String getContinentName() {
+    public String getWaterwayName() {
         return waterwayName;
     }
 
-    public String getContinentDesc() {
+    public String getWaterwayDesc() {
         return waterwayDesc;
     }
 
@@ -41,7 +41,7 @@ public class Waterway {
         return imgUrl;
     }
 
-//    public Collection<Country> getCountries(){
-//        return countries;
-//    }
+    public Island getIsland(){
+        return island;
+    }
 }
