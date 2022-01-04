@@ -9,6 +9,7 @@ public class Island {
     @GeneratedValue
     private Long id;
     private String islandName;
+    @Lob
     private String islandDesc;
     private String imgUrl;
 

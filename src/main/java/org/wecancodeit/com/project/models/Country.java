@@ -11,6 +11,7 @@ public class Country {
     @GeneratedValue
     private Long id;
     private String countryName;
+    @Lob
     private String countryDesc;
     private String imgUrl;
 

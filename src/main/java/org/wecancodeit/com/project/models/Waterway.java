@@ -9,6 +9,7 @@ public class Waterway {
     @GeneratedValue
     private Long id;
     private String waterwayName;
+    @Lob
     private String waterwayDesc;
     private String imgUrl;
 
