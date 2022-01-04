@@ -9,7 +9,7 @@ a {
   background-image:  url("../images/crinkled-paper.jpg");
   border: 2.5px solid black;
   border-radius: 10px;
-  padding: 3px;px;
+  padding: 3px;
   text-decoration: none;
   transition: all .5s ease-in-out;
 }
@@ -23,20 +23,22 @@ a:hover {
 .headshot {
   max-width: 300px;
   border-radius: 25%;
+  aspect-ratio: 4 / 4;
+  object-fit: cover;
 }
 
 nav {
   margin-bottom: 5rem;
 }
 
-
 p {
   margin: 5rem 20rem 5rem 20rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
 }
 
 p.landing {
   margin: 10rem 20rem 8rem 20rem;
-  font-weight: bolder;
 }
 
 ul {
@@ -79,22 +81,37 @@ section {
   font-size: 1.2rem;
 }
 
-.world-map{
+.world-map {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.itinerary{
+.aboutlink {
+ margin: 50px;
+}
+
+.itinerary {
   margin: 2rem 30rem 2rem 30rem;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
 ol{
   list-style-type: none;
+}
+
+ol {
+  list-style-type: none;
+}
+
+footer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
 }
 
 
