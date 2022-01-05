@@ -119,7 +119,17 @@ footer {
   border-radius: 5%;
 }
 
+.activities-list-header {
+  font-size: 3.1rem;
+}
 
+.activity-header{
+  font-size: 1.9rem;
+}
+
+.island-name-header{
+  font-size: 3.8rem;
+}
 
 
 
