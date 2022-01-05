@@ -92,19 +92,17 @@ section {
 }
 
 .itinerary {
-  margin: 2rem 30rem 2rem 30rem;
+  margin: 2rem 20rem 2rem 20rem;
+
 }
 
 ul {
   list-style-type: none;
 }
 
-ol{
-  list-style-type: none;
-}
-
 ol {
   list-style-type: none;
+  padding-left: 0rem;
 }
 
 footer {
@@ -120,6 +118,8 @@ footer {
   max-width: 30rem;
   border-radius: 5%;
 }
+
+
 
 
 
