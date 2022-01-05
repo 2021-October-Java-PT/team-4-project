@@ -8,7 +8,7 @@
 <div class="container">
     <main class="island">
         <h1 th:text ="${islandModel.islandName}"></h1>
-        <img th:src="@{${islandModel.imgUrl}}" alt="Image of island">
+        <img class="image-size" th:src="@{${islandModel.imgUrl}}" alt="Image of island">
         <p><strong>Description: </strong><span class="islandDetail" th:text="${islandModel.islandDesc}">Island</span></p>
           <div class="itinerary">
             <p class="itinerary-description">

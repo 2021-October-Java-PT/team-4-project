@@ -105,7 +105,7 @@ public class Populator implements CommandLineRunner {
         Island seaIslandsChain = new Island("Sea Islands Chain", "The Sea Islands are a chain" +
                 " of tidal and barrier islands on the Atlantic Ocean coast of the Southeastern United" +
                 " States. Numbering over 100, they are located between the mouths of the Santee and St." +
-                " Johns Rivers along the coast of South Carolina, Georgia, and Florida", "image url", atlanticOcean);
+                " Johns Rivers along the coast of South Carolina, Georgia, and Florida", "../images/SeaIslandChain.jpg", atlanticOcean);
         Island caymanIslands = new Island("Cayman Islands", " territory comprises the three islands of " +
                 "Grand Cayman, Cayman Brac and Little Cayman, which are located to the south of Cuba and" +
                 " northeast of Honduras, between Jamaica and Mexico's Yucatán Peninsula.","image url", carribeanSea);
