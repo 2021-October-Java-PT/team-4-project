@@ -98,6 +98,7 @@ section {
 
 ul {
   list-style-type: none;
+  padding-left: 0rem;
 }
 
 ol {
@@ -128,6 +129,10 @@ footer {
 }
 
 .island-name-header{
+  font-size: 3.8rem;
+}
+
+.page-header{
   font-size: 3.8rem;
 }
 
