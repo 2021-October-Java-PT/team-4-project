@@ -7,12 +7,12 @@
 <body>
 <div class="container">
     <main class="country">
-        <h1 th:text ="${countryModel.countryName}"></h1>
+        <h1 class="page-header" th:text ="${countryModel.countryName}"></h1>
         <img th:src="@{${countryModel.imgUrl}}" alt="Image of country">
         <p><strong>Description: </strong><span class="countryDetail" th:text="${countryModel.countryDesc}">Country</span></p>
     </main>
     <section class="islandsList">
-        <h2 class="">Islands in: <span class="" th:text="${countryModel.countryName}"></span></h2>
+        <h2 class="">Islands in <span class="" th:text="${countryModel.countryName}"></span>:</h2>
         <nav class="" th:each="island:${countryModel.islands}">
             <!--                <ul class="">-->
             <!--                    <li class="" th:each="country:${continentModel.countries}">-->
