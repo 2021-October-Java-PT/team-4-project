@@ -84,7 +84,10 @@ public class Populator implements CommandLineRunner {
         Waterway gulfOfThailand = new Waterway("Gulf of Thailand","The Gulf of Thailand, also known as the Gulf of Siam, " +
                 "is a shallow inlet in the southwestern South China Sea, bounded between the southwestern shores" +
                 " of the Indochinese Peninsula and the northern half of the Malay Peninsula","image");
-        Waterway bacuitBay = new Waterway("Bacuit Bay","description","image");
+        Waterway bacuitBay = new Waterway("Bacuit Bay","Bacuit Bay is dotted with islands and islets, " +
+                "most of which are inhabited. Its clear blue waters are teeming with marine life." +
+                " It is home to dugongs, turtles, manta rays, species of fishes, coral reefs, and the " +
+                "occasional whale sharks. There are over 30 dive sites ranging in depth from six to more than thirty meters.","image");
         Waterway southernPacificOcean = new Waterway("Southern Pacific Ocean","The Pacific Ocean is divided into " +
                 "two laregely different bodies of water by the equator. On the southern part of this divide is " +
                 "the southern Pacific Ocean.","image");
@@ -106,11 +109,11 @@ public class Populator implements CommandLineRunner {
                 " of tidal and barrier islands on the Atlantic Ocean coast of the Southeastern United" +
                 " States. Numbering over 100, they are located between the mouths of the Santee and St." +
                 " Johns Rivers along the coast of South Carolina, Georgia, and Florida", "../images/SeaIslandChain.jpg", atlanticOcean);
-        Island caymanIslands = new Island("Cayman Islands", " territory comprises the three islands of " +
+        Island caymanIslands = new Island("Cayman Islands", " The Cayman Islands are a territory comprises the three islands of " +
                 "Grand Cayman, Cayman Brac and Little Cayman, which are located to the south of Cuba and" +
                 " northeast of Honduras, between Jamaica and Mexico's Yucatán Peninsula.","image url", carribeanSea);
-        Island pribilofIslands = new Island("Pribilof Islands", "are a group of four volcanic islands off the " +
-                "coast of mainland Alaska, in the Bering Sea, about 200 miles (320 km) north of Unalaska and 200" +
+        Island pribilofIslands = new Island("Pribilof Islands", "Pribilof Islands are a group of four volcanic islands off the " +
+                "coast of mainland Alaska, in the Bering Sea, about 200 miles (320 km) north of Alaska and 200" +
                 " miles (320 km) southwest of Cape Newenham.","image url", beringSea);
         Island archIslands = new Island("Archipielago de Chiloe","are a group of small islands, off Port Albemarle" +
                 " on West Falkland in the Falkland Islands. They are uninhabited, and accessible only by" +
@@ -128,7 +131,8 @@ public class Populator implements CommandLineRunner {
         Island balearicIslands = new Island("Balearic Islands","are a Spanish archipelago in the Balearic Sea," +
                 " near the eastern coast of the Iberian Peninsula. Its four largest islands are Mallorca," +
                 " Menorca, Ibiza, and Formentera. ","image url", balearicSea);
-        Island bornholm = new Island("Bornholm Falster Lolland", "description","image url", balticSea);
+        Island bornholm = new Island("Bornholm Falster Lolland", "The biggest islands in the Baltic Sea with the" +
+                " most to do. Occupied by Denmark these islands are just a few from close to a hundred.","image url", balticSea);
         Island frisianIslands = new Island("Frisian Islands","The Frisian Islands, also known as the Wadden " +
                 "Islands or the Wadden Sea Islands, form an archipelago at the eastern edge of the North Sea in " +
                 "northwestern Europe, stretching from the northwest of the Netherlands through Germany" +
@@ -142,9 +146,14 @@ public class Populator implements CommandLineRunner {
         Island bananaIslands = new Island("Banana Islands","The Banana Islands are a group of islands that " +
                 "lie off the coast of Yawri Bay. Three islands make up the Banana Islands: Dublin and Ricketts are " +
                 "linked by a stone causeway. The third Mes-Meheux is a privately owned island.","image", yawriBay);
-        Island westcoast = new Island("West Coast Islands","description","image", gulfOfThailand);
-        Island southernIslands = new Island("Southern Islands","description","image", gulfOfThailand);
-        Island bacuitGroup = new Island("Bacuit Group of Islands","description","image", bacuitBay);
+        Island westcoast = new Island("West Coast Islands","Because of the many islands that Thailand " +
+                "is made of, it might be advisable to take it in chunks.Some of these islands are" +
+                " remote and uninhabited and others are settled.","image", gulfOfThailand);
+        Island southernIslands = new Island("Southern Islands","Because of the many islands that Thailand" +
+                "is made of, it might be advisable to take it in chunks.Some of these islands are" +
+                "remote and uninhabited and others are settled.","image", gulfOfThailand);
+        Island bacuitGroup = new Island("Bacuit Group of Islands","This group of Islands are fair weather " +
+                "majority of the year. Crystal Clear waters with a remote feel without the lack of resources.","image", bacuitBay);
         Island hawaii = new Island("Hawaii", "Hawaiian Islands are an archipelago of eight major islands, several atolls, numerous" +
                 " smaller islets, and seamounts in the North Pacific Ocean. The main islands include: " +
                 "The Big Islands, The Valley Ise, The Gathering Place, The Garden Isle, The Friendly Isle," +
