@@ -8,7 +8,7 @@
 <div class="container">
     <main class="continent">
         <h1 th:text ="${continentModel.continentName}"></h1>
-        <img th:src="@{${continentModel.imgUrl}}" alt="">
+        <img class="image-size" th:src="@{${continentModel.imgUrl}}" alt="">
         <p><strong>Description: </strong><span class="continentDetail" th:text="${continentModel.continentDesc}">Continent</span></p>
     </main>
     <section class="countriesList">
