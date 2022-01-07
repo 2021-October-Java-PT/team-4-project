@@ -129,19 +129,18 @@ section {
 }
 
 .itinerary {
-  margin: 2rem 30rem 2rem 30rem;
+  margin: 2rem 20rem 2rem 20rem;
+
 }
 
 ul {
   list-style-type: none;
+  padding-left: 0rem;
 }
 
 ol {
   list-style-type: none;
-}
-
-ol {
-  list-style-type: none;
+  padding-left: 0rem;
 }
 
 footer {
@@ -156,6 +155,22 @@ footer {
   object-fit: cover;
   max-width: 30rem;
   border-radius: 5%;
+}
+
+.activities-list-header {
+  font-size: 3.1rem;
+}
+
+.activity-header{
+  font-size: 1.9rem;
+}
+
+.island-name-header{
+  font-size: 3.8rem;
+}
+
+.page-header{
+  font-size: 3.8rem;
 }
 
 

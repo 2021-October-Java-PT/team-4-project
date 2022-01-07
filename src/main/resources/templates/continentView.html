@@ -8,11 +8,11 @@
 <div class="container">
     <main class="continent">
         <h1 th:text ="${continentModel.continentName}"></h1>
-        <img th:src="@{${continentModel.imgUrl}}" alt="">
+        <img class="image-size" th:src="@{${continentModel.imgUrl}}" alt="">
         <p><strong>Description: </strong><span class="continentDetail" th:text="${continentModel.continentDesc}">Continent</span></p>
     </main>
     <section class="countriesList">
-            <h2 class="">Countries in: <span class="" th:text="${continentModel.continentName}"></span></h2>
+            <h2 class="">Countries in <span class="" th:text="${continentModel.continentName}"></span>:</h2>
             <nav class="" th:each="country:${continentModel.countries}">
 <!--                <ul class="">-->
 <!--                    <li class="" th:each="country:${continentModel.countries}">-->
