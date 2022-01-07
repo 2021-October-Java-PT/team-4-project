@@ -7,8 +7,8 @@
 <body>
 <div class="container">
     <main class="country">
-        <h1 class="page-header" th:text ="${countryModel.countryName}"></h1>
-        <img th:src="@{${countryModel.imgUrl}}" alt="Image of country">
+        <h1 th:text ="${countryModel.countryName}"></h1>
+        <img class="image-size" th:src="@{${countryModel.imgUrl}}" alt="Image of country">
         <p><strong>Description: </strong><span class="countryDetail" th:text="${countryModel.countryDesc}">Country</span></p>
     </main>
     <section class="islandsList">

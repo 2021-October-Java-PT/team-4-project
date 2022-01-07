@@ -7,8 +7,8 @@
 <body>
 <div class="container">
     <main class="waterway">
-        <h1 class="page-header" th:text ="${waterwayModel.waterwayName}"></h1>
-        <img th:src="@{${waterwayModel.imgUrl}}" alt="Image of waterway">
+        <h1 th:text ="${waterwayModel.waterwayName}"></h1>
+        <img class="image-size" th:src="@{${waterwayModel.imgUrl}}" alt="Image of waterway">
         <p><strong>Description: </strong><span class="waterwayDetail" th:text="${waterwayModel.waterwayDesc}">Waterway</span></p>
     </main>
     <nav>
