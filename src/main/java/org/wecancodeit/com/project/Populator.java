@@ -65,10 +65,10 @@ public class Populator implements CommandLineRunner {
         Waterway beringSea = new Waterway("BeringSea"," is a marginal sea of the Northern Pacific Ocean." +
                 " It forms, along with the Bering Strait, the divide between the two largest landmasses" +
                 " on Earth: Eurasia and The Americas","../images/BeringSea.jpg");
-        Waterway pacificOcean = new Waterway("PacificOcean"," is a marginal sea of the Northern Pacific Ocean." +
+        Waterway pacificOcean = new Waterway("Pacific Ocean"," is a marginal sea of the Northern Pacific Ocean." +
                 " It forms, along with the Bering Strait, the divide between the two largest landmasses" +
                 " on Earth: Eurasia and The Americas","../images/PacificOcean.jpg");
-        Waterway balearicSea = new Waterway("balearicSea","Balearic Sea is a body of water in the" +
+        Waterway balearicSea = new Waterway("Balearic Sea","Balearic Sea is a body of water in the" +
                 " Mediterranean Sea near the Balearic Islands.The Ebro River flows into this small sea.","../images/BalearicSea.jpg");
         Waterway balticSea = new Waterway("Baltic Sea","The Baltic Sea is an arm of the Atlantic" +
                 " Ocean, enclosed by Denmark, Estonia, Finland, Germany, Latvia, Lithuania, Poland, Russia," +
@@ -139,14 +139,13 @@ public class Populator implements CommandLineRunner {
                 " to the west of Denmark.","../images/Frisian Islands.jpg", northSea);
         Island losIslands = new Island("Los Islands","are an island group lying off Conakry in Guinea, on the" +
                 " west coast of Africa.There are three main islands: Tamara (Fortoba), Kassa and Roume. ", "../images/Ios-island.jpg", atlanticOcean);
-                " to the west of Denmark.","image url", northSea);
         Island quirimbasIslands = new Island("Quirimbas Islands",  "The Quirimbas Islands lie in the Indian" +
                 " Ocean off northeastern Mozambique. The archipelago consists of about 32 islands, including Ibo, " +
                 "Matemo, Medjumbe, Quirimba, Metundo, Quisiva, Vamizi Island and Rolas Island all going up to the " +
                 "Tanzanian border.","../images/Quirimbas Islands.jpg", indianOcean);
         Island bananaIslands = new Island("Banana Islands","The Banana Islands are a group of islands that " +
                 "lie off the coast of Yawri Bay. Three islands make up the Banana Islands: Dublin and Ricketts are " +
-                "linked by a stone causeway. The third Mes-Meheux is a privately owned island.",../images/BananaIslands.jpg"", yawriBay);
+                "linked by a stone causeway. The third Mes-Meheux is a privately owned island.", "../images/BananaIslands.jpg", yawriBay);
         Island westcoast = new Island("West Coast Islands","Because of the many islands that Thailand " +
                 "is made of, it might be advisable to take it in chunks.Some of these islands are" +
                 " remote and uninhabited and others are settled.","../images/West Coast.jpg", gulfOfThailand);
