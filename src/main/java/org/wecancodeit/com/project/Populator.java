@@ -40,7 +40,7 @@ public class Populator implements CommandLineRunner {
                 "Eurasia or a continent in its own right, located entirely in the Northern Hemisphere and mostly" +
                 " in the Eastern Hemisphere. It comprises the westernmost peninsulas of the continental landmass","../images/Europe Continent.jpg");
         Continent africa = new Continent("Africa", "Africa is the world's second-largest and second-most " +
-                "populous continent, after Asia in both cases The continent is surrounded by the Mediterranean Sea" +
+                "populous continent, after Asia in both cases. The continent is surrounded by the Mediterranean Sea" +
                 " to the north, the Isthmus of Suez and the Red Sea to the northeast, the Indian Ocean to the " +
                 "southeast and the Atlantic Ocean to the west. ", "../images/Africa Continent.jpg");
         Continent asia = new Continent("Asia","Earth's largest and most populous continent located primarily in the " +
@@ -106,8 +106,7 @@ public class Populator implements CommandLineRunner {
                 " of tidal and barrier islands on the Atlantic Ocean coast of the Southeastern United" +
                 " States. Numbering over 100, they are located between the mouths of the Santee and St." +
                 " Johns Rivers along the coast of South Carolina, Georgia, and Florida", "../images/SeaIslandChain.jpg", atlanticOcean);
-        Island caymanIslands = new Island("Cayman Islands", " territory comprises the three islands of " +
-                "Grand Cayman, Cayman Brac and Little Cayman, which are located to the south of Cuba and" +
+        Island caymanIslands = new Island("Cayman Islands", " The Cayman Islands territory comprises the three islands of " +
                 " northeast of Honduras, between Jamaica and Mexico's Yucatán Peninsula.","../images/CaymanIsland.jpeg", carribeanSea);
         Island pribilofIslands = new Island("Pribilof Islands", "are a group of four volcanic islands off the " +
                 "coast of mainland Alaska, in the Bering Sea, about 200 miles (320 km) north of Unalaska and 200" +
@@ -135,6 +134,7 @@ public class Populator implements CommandLineRunner {
                 " to the west of Denmark.","../images/Frisian Islands.jpg", northSea);
         Island losIslands = new Island("Los Islands","are an island group lying off Conakry in Guinea, on the" +
                 " west coast of Africa.There are three main islands: Tamara (Fortoba), Kassa and Roume. ", "../images/Ios-island.jpg", atlanticOcean);
+                " to the west of Denmark.","image url", northSea);
         Island quirimbasIslands = new Island("Quirimbas Islands",  "The Quirimbas Islands lie in the Indian" +
                 " Ocean off northeastern Mozambique. The archipelago consists of about 32 islands, including Ibo, " +
                 "Matemo, Medjumbe, Quirimba, Metundo, Quisiva, Vamizi Island and Rolas Island all going up to the " +
@@ -154,7 +154,7 @@ public class Populator implements CommandLineRunner {
                 "and Green Island","../images/Auckland Islands.jpg", southernPacificOcean);
         Island australIslands = new Island("AustralIslands","are the southernmost group of islands in French " +
                 "Polynesia, an overseas country of the French Republic in the South Pacific. Many small islands " +
-                "populate this chain","../images/Austral Islands.jpg", southernPacificOcean);
+                "populate this chain","../images/Austral Islands.jpg", southernPacificOcean);     
         islandRepo.save(seaIslandsChain);
         islandRepo.save(caymanIslands);
         islandRepo.save(pribilofIslands);
@@ -190,7 +190,7 @@ public class Populator implements CommandLineRunner {
                 "south, the Pacific Ocean to the west, and Panama to the northwest.","../images/Columbia.jpg", southAmerica, rosarioIslands);
         Country spain = new Country("Spain",  "Spain is a country in southwestern Europe with some pockets of " +
                 "territory in the Mediterranean Sea, offshore in the Atlantic Ocean and across the Strait" +
-                " of Gibraltar.Its continental European territory is situated on the Iberian Peninsula, " +
+                " of Gibraltar. Its continental European territory is situated on the Iberian Peninsula, " +
                 "and its insular territory includes the Balearic Islands in the Mediterranean Sea, several small" +
                 " islands in the Alboran Sea and the Canary Islands in the Atlantic Ocean.", "../images/Spain.jpg", europe, balearicIslands);
         Country denmark = new Country("Denmark","Denmark is a Nordic country in Northern Europe. " +
@@ -209,7 +209,7 @@ public class Populator implements CommandLineRunner {
                 " West Africa. It is bordered by Liberia to the southeast and Guinea to the northeast. Sierra " +
                 "Leone has a tropical climate with a diverse environment ranging from savanna to rainforests", "../images/Sierra-Leone.jpg", africa, bananaIslands);
         Country thailand = new Country("Thailand","Thailand, is a country in Southeast Asia and is in the center" +
-                " of the Indochinese Peninsula,t is bordered to the north by Myanmar and Laos, to the east by" +
+                " of the Indochinese Peninsula. It is bordered to the north by Myanmar and Laos, to the east by" +
                 " Laos and Cambodia, to the south by the Gulf of Thailand and Malaysia, and to the west by" +
                 " the Andaman Sea ","../images/Thailand.jpg", asia, westcoast, southernIslands);
         Country philippines = new Country("Philippines"," in Southeast Asia. It is situated in the western Pacific" +
