@@ -62,7 +62,7 @@ public class Populator implements CommandLineRunner {
                 "the tropics of the Western Hemisphere.  It is bounded by Mexico and Central America to the west and" +
                 " south west, to the north by the Greater Antilles starting with Cuba, to the east by the Lesser " +
                 "Antilles, and to the south by the north coast of South Americad","../images/CarribeanSea.jpg");
-        Waterway beringSea = new Waterway("BeringSea"," is a marginal sea of the Northern Pacific Ocean." +
+        Waterway beringSea = new Waterway("Bering Sea"," is a marginal sea of the Northern Pacific Ocean." +
                 " It forms, along with the Bering Strait, the divide between the two largest landmasses" +
                 " on Earth: Eurasia and The Americas","../images/BeringSea.jpg");
         Waterway pacificOcean = new Waterway("Pacific Ocean"," is a marginal sea of the Northern Pacific Ocean." +
