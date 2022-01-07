@@ -62,10 +62,10 @@ public class Populator implements CommandLineRunner {
                 "the tropics of the Western Hemisphere.  It is bounded by Mexico and Central America to the west and" +
                 " south west, to the north by the Greater Antilles starting with Cuba, to the east by the Lesser " +
                 "Antilles, and to the south by the north coast of South Americad","../images/CarribeanSea.jpg");
-        Waterway beringSea = new Waterway("Bering Sea"," is a marginal sea of the Northern Pacific Ocean." +
+        Waterway beringSea = new Waterway("Bering Sea","The Bering Sea is a marginal sea of the Northern Pacific Ocean." +
                 " It forms, along with the Bering Strait, the divide between the two largest landmasses" +
                 " on Earth: Eurasia and The Americas","../images/BeringSea.jpg");
-        Waterway pacificOcean = new Waterway("Pacific Ocean"," is a marginal sea of the Northern Pacific Ocean." +
+        Waterway pacificOcean = new Waterway("Pacific Ocean","The Pacific Ocean is a marginal sea of the Northern Pacific Ocean." +
                 " It forms, along with the Bering Strait, the divide between the two largest landmasses" +
                 " on Earth: Eurasia and The Americas","../images/PacificOcean.jpg");
         Waterway balearicSea = new Waterway("Balearic Sea","Balearic Sea is a body of water in the" +
@@ -115,20 +115,20 @@ public class Populator implements CommandLineRunner {
         Island pribilofIslands = new Island("Pribilof Islands", "Pribilof Islands are a group of four volcanic islands off the " +
                 "coast of mainland Alaska, in the Bering Sea, about 200 miles (320 km) north of Alaska and 200" +
                 " miles (320 km) southwest of Cape Newenham.","../images/Pribilof-Islands.jpg", beringSea);
-        Island archIslands = new Island("Archipielago de Chiloe","are a group of small islands, off Port Albemarle" +
+        Island archIslands = new Island("Archipielago de Chiloe","These islands are a group of small islands, off Port Albemarle" +
                 " on West Falkland in the Falkland Islands. They are uninhabited, and accessible only by" +
                 " boat. They are so called because the largest of the group has a natural" +
                 " arch in it, large enough to allow a fair sized boat through.The islands include Big Arch" +
                 " Island Clump Island Tussac Island Pyramid Rock Last Rock Albemarle Rock ","../images/Archpielago de Chiloe.jpg", pacificOcean);
-        Island archJuan = new Island("Archipielago Jaun Fernandez", "is a group of islands located in the " +
+        Island archJuan = new Island("Archipielago Jaun Fernandez", "These islands are a group of islands located in the " +
                 "South Pacific, more than 670 km west of the coasts of South America . It is made up of the" +
                 " Robinson Crusoe islands (known until 1966 as Más a Tierra ), Alejandro Selkirk " +
                 "(known until 1966 as Más Afuera ), the Santa Clara islet and smaller islets.","../images/Archpielago Juan Fernandez.jpg", pacificOcean);
-        Island rosarioIslands = new Island("Rosario Islands","also referred to as Corales Islas del Rosario" +
+        Island rosarioIslands = new Island("Rosario Islands","Rosario, also referred to as Corales Islas del Rosario" +
                 " (Coral Islands of Rosario),is an archipelago located off the coast of Colombia, " +
                 "approximately 100 kilometres (62 miles) from Cartagena.It is one of the 46 Natural National" +
                 " Parks of Colombia. ","../images/Rosario Islands.jpg", carribeanSea);
-        Island balearicIslands = new Island("Balearic Islands","are a Spanish archipelago in the Balearic Sea," +
+        Island balearicIslands = new Island("Balearic Islands","The Balearic Islands are a Spanish archipelago in the Balearic Sea," +
                 " near the eastern coast of the Iberian Peninsula. Its four largest islands are Mallorca," +
                 " Menorca, Ibiza, and Formentera. ","../images/Balearic Islands.jpg", balearicSea);
         Island bornholm = new Island("Bornholm Falster Lolland", "The biggest islands in the Baltic Sea with the" +
@@ -137,7 +137,7 @@ public class Populator implements CommandLineRunner {
                 "Islands or the Wadden Sea Islands, form an archipelago at the eastern edge of the North Sea in " +
                 "northwestern Europe, stretching from the northwest of the Netherlands through Germany" +
                 " to the west of Denmark.","../images/Frisian Islands.jpg", northSea);
-        Island losIslands = new Island("Los Islands","are an island group lying off Conakry in Guinea, on the" +
+        Island losIslands = new Island("Los Islands","Los Islands are an island group lying off Conakry in Guinea, on the" +
                 " west coast of Africa.There are three main islands: Tamara (Fortoba), Kassa and Roume. ", "../images/Ios-island.jpg", atlanticOcean);
         Island quirimbasIslands = new Island("Quirimbas Islands",  "The Quirimbas Islands lie in the Indian" +
                 " Ocean off northeastern Mozambique. The archipelago consists of about 32 islands, including Ibo, " +
@@ -161,7 +161,7 @@ public class Populator implements CommandLineRunner {
         Island aucklandIslands = new Island("Auckland Islands","The main Auckland Island, is surrounded by smaller " +
                 "Adams Island, Enderby Island, Disappointment Island, Ewing Island, Rose Island, Dundas Island, " +
                 "and Green Island","../images/Auckland Islands.jpg", southernPacificOcean);
-        Island australIslands = new Island("AustralIslands","are the southernmost group of islands in French " +
+        Island australIslands = new Island("AustralIslands","These islands are the southernmost group of islands in French " +
                 "Polynesia, an overseas country of the French Republic in the South Pacific. Many small islands " +
                 "populate this chain","../images/Austral Islands.jpg", southernPacificOcean);     
         islandRepo.save(seaIslandsChain);
@@ -204,11 +204,11 @@ public class Populator implements CommandLineRunner {
                 " islands in the Alboran Sea and the Canary Islands in the Atlantic Ocean.", "../images/Spain.jpg", europe, balearicIslands);
         Country denmark = new Country("Denmark","Denmark is a Nordic country in Northern Europe. " +
                 "Includes the autonomous territories of the Faroe Islands and Greenland in the North Atlantic Ocean","../images/Denmark.jpg", europe, bornholm);
-        Country netherlands = new Country("Netherlands", "is a country located in Northwestern " +
+        Country netherlands = new Country("Netherlands", "The Nertherlands is a country located in Northwestern " +
                 "Europe with territories in the Caribbean.", "../images/Netherland.jpg", europe, frisianIslands);
         Country germany = new Country("Germany","Germany is a country in central Europe and is between the Baltic" +
                 " and North seas to the north, and the Alps to the south","../images/Germany.jpg", europe);
-        Country guinea = new Country("Guinea", "is a coastal country in West Africa. Guinea borders the Atlantic Ocean" +
+        Country guinea = new Country("Guinea", "Guinea is a coastal country in West Africa. Guinea borders the Atlantic Ocean" +
                 " to the west, Guinea-Bissau to the northwest, Senegal to the north, Mali to the northeast, Cote d'Ivoire " +
                 "to the southeast, and Sierra Leone and Liberia to the south", "../images/Guinea.jpg", africa, losIslands);
         Country mozambique = new Country("Mozambique","Muzambhiki), is a country located in Southeastern Africa bordered" +
@@ -221,7 +221,7 @@ public class Populator implements CommandLineRunner {
                 " of the Indochinese Peninsula. It is bordered to the north by Myanmar and Laos, to the east by" +
                 " Laos and Cambodia, to the south by the Gulf of Thailand and Malaysia, and to the west by" +
                 " the Andaman Sea ","../images/Thailand.jpg", asia, westcoast, southernIslands);
-        Country philippines = new Country("Philippines"," in Southeast Asia. It is situated in the western Pacific" +
+        Country philippines = new Country("Philippines","The Philippines is in Southeast Asia. It is situated in the western Pacific" +
                 " Ocean, and consists of about 7,640 islands, that are broadly categorized under three main" +
                 " geographical divisions from north to south: Luzon, Visayas, and Mindanao.", "../images/Philippine.jpg", asia, bacuitGroup);
         Country newZealand = new Country("New Zealand","New Zealand is an island country in the southwestern" +
